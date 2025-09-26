@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, Text, View } from 'react-native';
+import mainStyle from "./ui/styles/main-style";
 
 const App = () => {
   const handleClick = (value: number) => {
@@ -8,9 +9,13 @@ const App = () => {
 
   return (
     <>
-      <View style={styles.container}>
+      <View style={[mainStyle.container, styles.container]}>
         <Text style={styles.text}>Todos</Text>
-        <Button title="Click Me" onPress={() => handleClick(7)}/>
+        <Button
+          color="purple"
+          title="Click Me"
+          onPress={() => handleClick(7)}
+        />
       </View>
     </>
     // {<View style={styles.container}>}
@@ -23,7 +28,6 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
   },
