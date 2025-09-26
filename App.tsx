@@ -4,9 +4,9 @@ import { StyleSheet } from 'react-native';
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
 import HomeScreen from "./ui/screens/HomeScreen";
-import TodoListScreen from "./ui/screens/TodoListScreen";
-import AddTodoScreen from "./ui/screens/AddTodoScreen";
-import TodoDetailScreen from "./ui/screens/TodoDetailScreen";
+import TaskListScreen from "./ui/screens/TaskListScreen";
+import AddTaskScreen from "./ui/screens/AddTaskScreen";
+import TaskDetailScreen from "./ui/screens/TaskDetailScreen";
 import { RootStackParamList } from "./ui/navigation";
 
 
@@ -16,9 +16,9 @@ function RootStack() {
   return (
     <Stack.Navigator initialRouteName="Home">
       <Stack.Screen name="Home" component={HomeScreen}/>
-      <Stack.Screen name="TodoList" component={TodoListScreen}/>
-      <Stack.Screen name="AddTodo" component={AddTodoScreen}/>
-      <Stack.Screen name="TodoDetail" component={TodoDetailScreen}/>
+      <Stack.Screen name="TaskList" component={TaskListScreen}/>
+      <Stack.Screen name="AddTask" component={AddTaskScreen}/>
+      <Stack.Screen name="TaskDetail" component={TaskDetailScreen}/>
     </Stack.Navigator>
   );
 }

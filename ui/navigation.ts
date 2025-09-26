@@ -1,8 +1,8 @@
 type RootStackParamList = {
   Home: undefined;
-  TodoList: undefined;
-  AddTodo: undefined;
-  TodoDetail: { taskId: string };
+  TaskList: undefined;
+  AddTask: undefined;
+  TaskDetail: { taskId: string };
 }
 
 export type { RootStackParamList };

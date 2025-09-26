@@ -2,9 +2,9 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation';
 
-type Props = NativeStackScreenProps<RootStackParamList, 'TodoDetail'>;
+type Props = NativeStackScreenProps<RootStackParamList, 'TaskDetail'>;
 
-const TodoDetailScreen = ({ route, navigation }: Props) => {
+const TaskDetailScreen = ({ route, navigation }: Props) => {
   const { taskId } = route.params;
 
   return (
@@ -30,4 +30,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default TodoDetailScreen;
+export default TaskDetailScreen;

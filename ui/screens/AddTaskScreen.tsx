@@ -2,9 +2,9 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation';
 
-type Props = NativeStackScreenProps<RootStackParamList, 'AddTodo'>;
+type Props = NativeStackScreenProps<RootStackParamList, 'AddTask'>;
 
-const AddTodoScreen = ({ route, navigation }: Props) => {
+const AddTaskScreen = ({ route, navigation }: Props) => {
   return (
     <>
       <View>
@@ -20,4 +20,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default AddTodoScreen;
+export default AddTaskScreen;

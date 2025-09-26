@@ -9,8 +9,8 @@ const HomeScreen = ({ navigation }: Props) => {
     <>
       <View>
         <Button
-          title="Add Task"
-          onPress={() => navigation.navigate("TodoList")}
+          title="See your Tasks"
+          onPress={() => navigation.navigate("TaskList")}
         />
       </View>
     </>
