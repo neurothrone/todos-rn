@@ -10,7 +10,7 @@ const TaskDetailScreen = ({ route, navigation }: Props) => {
   return (
     <>
       <View>
-        <Text style={styles.text}>Task {taskId} Detail</Text>
+        <Text style={styles.text}>Task {taskId} Details</Text>
         <Button
           title="Go Back"
           onPress={() => navigation.goBack()}
