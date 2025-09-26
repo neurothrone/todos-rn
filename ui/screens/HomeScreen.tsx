@@ -1,0 +1,26 @@
+import { Button, StyleSheet, Text, View } from 'react-native';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../navigation';
+
+type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
+
+const HomeScreen = ({ navigation }: Props) => {
+  return (
+    <>
+      <View>
+        <Button
+          title="Add Task"
+          onPress={() => navigation.navigate("TodoList")}
+        />
+      </View>
+    </>
+  );
+}
+
+const styles = StyleSheet.create({
+  text: {
+    color: "seagreen",
+  }
+});
+
+export default HomeScreen;
