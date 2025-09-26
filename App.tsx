@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       <View style={[mainStyle.container, styles.container]}>
-        <Text style={styles.text}>Todos</Text>
+        <Text style={[styles.text, { fontSize: 30 }]}>Todos</Text>
         <Button
           color="purple"
           title="Click Me"
